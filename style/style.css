@@ -1,0 +1,118 @@
+:root {
+   --Orange: hsl(25, 97%, 53%);
+   --White: hsl(0, 0%, 100%);
+   --Light-Grey: hsl(217, 12%, 63%);
+   --Medium-Grey: hsl(216, 12%, 54%);
+   --Dark-Blue: hsl(213, 19%, 18%);
+   --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+*,*::before,*::after {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 15px;
+   font-family: 'Overpass', sans-serif;
+}
+
+body {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--Very-Dark-Blue);
+   color: var(--White);
+}
+
+main {
+   background-color: var(--Dark-Blue);
+   width: 24rem;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding: 2rem;
+   border-radius: 1.3rem;
+}
+
+img.ratingState {
+   background-color: hsl(213deg 20% 21%);
+   padding: 0.8rem;
+   border-radius: 1.2rem;
+}
+
+p.ratingState {
+   font-size: small;
+   color: var(--Light-Grey);
+   line-height: 1.5;
+   padding-top: 0.6rem;
+   padding-bottom: 1.2rem;
+}
+
+h1 {
+   font-size: x-large;
+   padding-top: 2rem;
+}
+
+button[type=submit] {
+   background-color: var(--Orange);
+   color: var(--White);
+   border: none;
+   width: 100%;
+   padding: 0.6rem 0;
+   border-radius: 1rem;
+   letter-spacing: 0.1rem;
+   font-size: 0.85rem;
+}
+
+.btnContainer {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   padding-bottom: 2rem;
+}
+
+.btnContainer > button {
+   background-color: hsl(213deg 20% 21%);
+   color: var(--Light-Grey);
+   border: none;
+   padding: 1rem 1.2rem;
+   border-radius: 2rem;
+}
+
+.btnContainer > button:hover {
+   background-color: var(--Orange);
+   color: var(--White);
+   cursor: pointer;
+}
+
+button[type=submit]:hover {
+   background-color: var(--White);
+   color: var(--Orange);
+   cursor: pointer;
+}
+
+.thankYouState {
+   display: none;
+}
+
+img + p.thankYouState {
+   background-color: hsl(213deg 20% 21%);
+   color: orange;
+   padding: 0.3rem 0.85rem;
+   border-radius: 1rem;
+   font-size: smaller;
+   margin-top: 2rem;
+}
+
+h1 + p.thankYouState {
+   color: var(--Light-Grey);
+   font-size: small;
+   line-height: 1.5;
+   text-align: center;
+   padding-top: 0.5rem;
+}
